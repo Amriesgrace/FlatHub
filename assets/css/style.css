@@ -1,0 +1,11 @@
+.uk-navbar-item, .uk-navbar-nav>li>a, .uk-navbar-toggle{
+    font-family: 'Work Sans', sans-serif !important;
+    text-transform: initial;
+}
+.banner_img{
+    height: 650px;
+    width: 100%;
+    background-image: url('../images/banner-img.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}

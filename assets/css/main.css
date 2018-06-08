@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:400,500,700,900");
+/* line 23, C:/Users/Baron2Oxide/Desktop/FlatHub/assets/sass/_base.scss */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* line 28, C:/Users/Baron2Oxide/Desktop/FlatHub/assets/sass/_base.scss */
+html, body {
+  font-family: 'Work Sans', sans-serif !important;
+  font-size: 16px;
+  font-weight: 300;
+  width: 100%;
+  background: #FFF;
+}
+
+/* line 35, C:/Users/Baron2Oxide/Desktop/FlatHub/assets/sass/_base.scss */
+body {
+  font-family: 'Work Sans', sans-serif !important;
+}
+
+/*Margin*/
+/* line 40, C:/Users/Baron2Oxide/Desktop/FlatHub/assets/sass/_base.scss */
+.mt-64 {
+  margin-top: 64px;
+}
+
+/* line 41, C:/Users/Baron2Oxide/Desktop/FlatHub/assets/sass/_base.scss */
+.mt-80 {
+  margin-top: 80px;
+}
+
+/* line 43, C:/Users/Baron2Oxide/Desktop/FlatHub/assets/sass/_base.scss */
+.mb-6e2 {
+  margin-bottom: 6.2rem;
+}
+
+/* line 44, C:/Users/Baron2Oxide/Desktop/FlatHub/assets/sass/_base.scss */
+.mx-3 {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+/*Padding*/
+/* line 49, C:/Users/Baron2Oxide/Desktop/FlatHub/assets/sass/_base.scss */
+.py-4e4 {
+  padding-top: 4.4rem;
+  padding-bottom: 4.4rem;
+}
+
+/* line 53, C:/Users/Baron2Oxide/Desktop/FlatHub/assets/sass/_base.scss */
+.px-3 {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+/**Font-Size**/
+/* line 59, C:/Users/Baron2Oxide/Desktop/FlatHub/assets/sass/_base.scss */
+.f-14 {
+  font-size: 14px;
+}
+
+/* line 60, C:/Users/Baron2Oxide/Desktop/FlatHub/assets/sass/_base.scss */
+.f-16 {
+  font-size: 16px;
+}
+
+/* line 61, C:/Users/Baron2Oxide/Desktop/FlatHub/assets/sass/_base.scss */
+.f-24 {
+  font-size: 24px;
+}
+
+/* line 62, C:/Users/Baron2Oxide/Desktop/FlatHub/assets/sass/_base.scss */
+.f-36 {
+  font-size: 36px;
+}
+
+/* line 63, C:/Users/Baron2Oxide/Desktop/FlatHub/assets/sass/_base.scss */
+.f-40 {
+  font-size: 40px;
+}
+
+/* line 64, C:/Users/Baron2Oxide/Desktop/FlatHub/assets/sass/_base.scss */
+.f-58 {
+  font-size: 58px;
+}
+
+/*** Font weight***/
+/* line 68, C:/Users/Baron2Oxide/Desktop/FlatHub/assets/sass/_base.scss */
+.fw-500 {
+  font-weight: 500;
+}
+
+/**Heights**/
+/* line 72, C:/Users/Baron2Oxide/Desktop/FlatHub/assets/sass/_base.scss */
+.h-44 {
+  height: 44px;
+}
+
+/**Backgrounds**/
+/* line 76, C:/Users/Baron2Oxide/Desktop/FlatHub/assets/sass/_base.scss */
+.bg-white {
+  background: #FFF;
+}
+
+/* line 77, C:/Users/Baron2Oxide/Desktop/FlatHub/assets/sass/_base.scss */
+.bg-secondary {
+  background: #F9F9F9;
+}
+
+/**Colors**/
+/* line 80, C:/Users/Baron2Oxide/Desktop/FlatHub/assets/sass/_base.scss */
+.white-text {
+  color: #FFF;
+}
+
+/***Positions***/
+/* line 84, C:/Users/Baron2Oxide/Desktop/FlatHub/assets/sass/_base.scss */
+.center {
+  text-align: center;
+}
+
+/* line 86, C:/Users/Baron2Oxide/Desktop/FlatHub/assets/sass/_base.scss */
+.t-227 {
+  top: 227px;
+}
+
+/* line 87, C:/Users/Baron2Oxide/Desktop/FlatHub/assets/sass/_base.scss */
+.l-100 {
+  left: 100px;
+}
+
+/* line 89, C:/Users/Baron2Oxide/Desktop/FlatHub/assets/sass/_base.scss */
+.inner-content {
+  padding-top: 227px;
+  padding-left: 100px;
+}
+
+/* line 92, C:/Users/Baron2Oxide/Desktop/FlatHub/assets/sass/_base.scss */
+.inner-content h3 {
+  font-weight: 500;
+}
+
+/* line 95, C:/Users/Baron2Oxide/Desktop/FlatHub/assets/sass/_base.scss */
+.inner-content p {
+  line-height: 24px;
+  font-size: 20px;
+}
+
+/**inputs and buttons **/
+/* line 102, C:/Users/Baron2Oxide/Desktop/FlatHub/assets/sass/_base.scss */
+.f-input-large {
+  width: 264px;
+  height: 44px;
+  border-radius: 3px;
+  background: #FFF;
+  padding: 12px 22px;
+  font-size: 16px;
+}
+
+/* line 110, C:/Users/Baron2Oxide/Desktop/FlatHub/assets/sass/_base.scss */
+.f-small {
+  width: 165px;
+  height: 44px;
+  border-radius: 3px;
+  background: #FFF;
+  padding: 12px 22px;
+  border: none !important;
+}
+
+/* line 118, C:/Users/Baron2Oxide/Desktop/FlatHub/assets/sass/_base.scss */
+.btn-large {
+  width: 232px;
+  height: 44px;
+  border-radius: 3px;
+  background: #A66429;
+  color: #FFF;
+  border: none;
+  font-weight: bold;
+}
+
+/* line 127, C:/Users/Baron2Oxide/Desktop/FlatHub/assets/sass/_base.scss */
+.small-hr {
+  border: 1px solid #A66429;
+  width: 97px;
+  text-align: center;
+  height: 3px;
+  border-radius: 2px;
+  margin: auto;
+  background: #A66429;
+}
+
+/*# sourceMappingURL=../css/main.map */

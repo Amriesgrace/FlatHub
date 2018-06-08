@@ -1,0 +1,136 @@
+// @font-face{
+//     font-family: 'WorkSans';
+//     src: url('../fonts/Work_Sans/WorkSans-Black.ttf'); 
+//     font-weight: normal;
+// }
+// @font-face{
+//     font-family: 'WorkSans-Bold';
+//     src: url('../fonts/Work_Sans/WorkSans-Bold.ttf');
+//     font-weight: normal;
+// }
+// @font-face{
+//     font-family: 'WorkSans-Medium';
+//     src: url('../fonts/Work_Sans/WorkSans-Medium.ttf');
+//     font-weight: normal;
+// }
+// @font-face{
+//     font-family: 'WorkSans-Regular';
+//     src: url('../fonts/Work_Sans/WorkSans-Regular.ttf');
+//     font-weight: normal;
+// }
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,500,700,900');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+html, body{
+    font-family: 'Work Sans', sans-serif !important;
+    font-size: $font-16;
+    font-weight: 300;
+    width: 100%;
+    background: $white-color;
+}
+body{
+    font-family: 'Work Sans', sans-serif !important;
+}
+/*Margin*/
+//Margin-top
+.mt-64{ margin-top:64px; }
+.mt-80{ margin-top:80px; }
+//Margin Botom
+.mb-6e2{ margin-bottom: 6.2rem; }
+.mx-3{
+    margin-left: 3rem;
+    margin-right:3rem;
+}
+/*Padding*/
+.py-4e4{ 
+    padding-top: 4.4rem; 
+     padding-bottom: 4.4rem
+    }
+.px-3{
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+/**Font-Size**/
+.f-14{ font-size: $font-14; }
+.f-16{ font-size: $font-16; }
+.f-24{ font-size: $font-24; }
+.f-36{ font-size: $font-36; }
+.f-40{ font-size: $font-40; }
+.f-58{ font-size: $font-58; }
+
+
+/*** Font weight***/
+.fw-500{ font-weight: 500;}
+
+
+/**Heights**/
+.h-44{ height:44px }
+
+
+/**Backgrounds**/
+.bg-white{ background:$white-color }
+.bg-secondary{ background: #F9F9F9; }
+
+/**Colors**/
+.white-text{ color: $white-color;}
+
+
+/***Positions***/
+.center{ text-align: center; }
+//tops
+.t-227{ top:227px }
+.l-100{ left:100px }
+
+.inner-content{
+    padding-top: 227px;
+    padding-left:100px;
+    h3{
+        font-weight: 500;
+    }
+    p{
+        line-height: 24px;
+        font-size: 20px;
+    }
+}
+
+/**inputs and buttons **/
+.f-input-large{
+    width:264px;
+    height: 44px;
+    border-radius: 3px;
+    background: $white-color;
+    padding: 12px 22px;
+    font-size: $font-16;
+}
+.f-small{
+    width: 165px;
+    height: 44px;
+    border-radius: 3px;
+    background: $white-color;
+    padding: 12px 22px;
+    border: none !important;
+}
+.btn-large{
+    width:232px;
+    height: 44px;
+    border-radius: 3px;
+    background: $brown-color;
+    color: $white-color;
+    border: none;
+    font-weight: bold;
+}
+.small-hr{
+ border: 1px solid $brown-color;
+ width: 97px;
+ text-align: center;
+ height: 3px;   
+ border-radius: 2px;
+ margin: auto;
+ background: $brown-color;
+
+}
