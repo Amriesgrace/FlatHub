@@ -19,18 +19,15 @@ body{
     
 }
 /*Margin*/
-//Margin-top
 .mt-64{ margin-top:64px; }
 .mt-80{ margin-top:80px; }
 .mt-7e2{ margin-top: 7.2rem; }
-
-//Margin Botom
 .mb-6e2{ margin-bottom: 6.2rem; }
-
 .mx-3{
     margin-left: 3rem;
     margin-right:3rem;
 }
+
 /*Padding*/
 .py-165{  
     padding-top: 165px;
@@ -40,21 +37,20 @@ body{
         padding-bottom: 65px;
     }
 }
-
 .py-4e4{ 
     padding-top: 4.4rem; 
      padding-bottom: 4.4rem
-    }
-.px-3{
-    padding-left: 3rem;
-    padding-right: 3rem;
 }
+
 
 /**Font-Size**/
 .f-12{ font-size: 12px; }
 .f-14{ font-size: $font-14; }
 .f-16{ font-size: $font-16; }
-.f-24{ font-size: $font-24; @include screenSize(small-desktop){ font-size: 18px;}}
+.f-24{ 
+    font-size: $font-24; 
+    @include screenSize(small-desktop){ font-size: 18px;}
+}
 .f-36{ font-size: $font-36; }
 .f-40{ font-size: $font-40; }
 .f-58{ font-size: $font-58; }
@@ -86,16 +82,26 @@ body{
 .grey-sd{ color: #D1C8C8;}
 .font-color{ color: $font-color; }
 .brand-color{ color: $brown-color; }
+
+/***Borders ***/
 .grey-bd{ border: 1px solid #CDCDCD;}
 .bd-brand{ border: 1px solid $brown-color; }
 .br-2{ border-radius: 2px;}
 
 
-/***Positions***/
-.center{ text-align: center; }
-//tops
-.t-227{ top:227px }
-.l-100{ left:100px }
+.list-none{ list-style-type: none;}
+.dis-none{ display: none; }
+.dis-block{ display: block; }
+.no-decor{ text-decoration: none; }
+.no-decor:hover{ text-decoration: none; }
+.hover-link:hover{ color: $brown-color; }
+.active{ color: $brown-color; }
+
+.hover-link:active{ color: $brown-color; }
+
+
+
+/***CUSTOM STYLING***/
 
 .inner-content{
     padding-top: 227px;
@@ -123,50 +129,6 @@ body{
     @include screenSize(small-desktop){ padding-top: 170px;}
 }
 
-input{
-    @include screenSize(ss-phone){ margin-bottom: 1em; }
-    @include screenSize(ls-phone){margin-bottom: 1em; }
-    @include screenSize(tablet){ margin-bottom: 1em; }
-    @include screenSize(small-desktop){ margin-bottom: 1em;}
-}
-
-/**inputs and buttons **/
-.f-input-large{
-    width:264px;
-    height: 44px;
-    border-radius: 3px;
-    background: $white-color;
-    padding: 12px 22px;
-    font-size: $font-16;
-    @include screenSize(small-desktop) {
-        width: 200px;
-    }  
-    @include screenSize(tablet){
-        margin-bottom: 1em;
-    }
-}
-
-.f-small{
-    width: 165px;
-    height: 44px;
-    border-radius: 3px;
-    background: $white-color;
-    padding: 12px 22px;
-    border: none !important;
-    
-}
-.btn-large{
-    width:232px;
-    height: 44px;
-    border-radius: 3px;
-    background: $brown-color;
-    color: $white-color;
-    border: none;
-    font-weight: bold;
-
-}
-
-
 .small-hr{
  border: 1px solid $brown-color;
  width: 97px;
@@ -177,15 +139,6 @@ input{
  background: $brown-color;
 
 }
-.list-none{ list-style-type: none;}
-.dis-none{ display: none; }
-.dis-block{ display: block; }
-.no-decor{ text-decoration: none; }
-.no-decor:hover{ text-decoration: none; }
-.hover-link:hover{ color: $brown-color; }
-.active{ color: $brown-color; }
-
-.hover-link:active{ color: $brown-color; }
 
 .divider {
     display: -webkit-flex;

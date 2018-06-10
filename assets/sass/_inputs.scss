@@ -1,10 +1,51 @@
-
+/*** INPUTS***/
 input:focus{
     color: $font-color;
     border-color: $brown-color;
     outline: 0;
     box-shadow: 0 0 7px 0.2rem rgba(166, 100, 41, 1);
 }
+.login-input{
+    width:300px;
+    height: 44px;
+    border-radius: 3px;
+    padding: 0 1em;
+    @include screenSize(ss-phone){
+        width: 270px;
+
+    }
+}
+.f-input-large{
+    width:264px;
+    height: 44px;
+    border-radius: 3px;
+    background: $white-color;
+    padding: 12px 22px;
+    font-size: $font-16;
+    @include screenSize(small-desktop) {
+        width: 200px;
+    }  
+    @include screenSize(tablet){
+        margin-bottom: 1em;
+    }
+}
+.f-small{
+    width: 165px;
+    height: 44px;
+    border-radius: 3px;
+    background: $white-color;
+    padding: 12px 22px;
+    border: none !important;  
+}
+input{
+    @include screenSize(ss-phone){ margin-bottom: 1em; }
+    @include screenSize(ls-phone){margin-bottom: 1em; }
+    @include screenSize(tablet){ margin-bottom: 1em; }
+    @include screenSize(small-desktop){ margin-bottom: 1em;}
+}
+
+
+/***BUTTONS***/
 .facebook-btn{
     width: 300px;
     height: 44px;
@@ -25,16 +66,7 @@ input:focus{
     }
     
 }
-.login-input{
-    width:300px;
-    height: 44px;
-    border-radius: 3px;
-    padding: 0 1em;
-    @include screenSize(ss-phone){
-        width: 270px;
 
-    }
-}
 .login-btn{
     width: 300px;
     height: 44px;
@@ -45,4 +77,13 @@ input:focus{
         width:270px;
 
     }
+}
+.btn-large{
+    width:232px;
+    height: 44px;
+    border-radius: 3px;
+    background: $brown-color;
+    color: $white-color;
+    border: none;
+    font-weight: bold;
 }

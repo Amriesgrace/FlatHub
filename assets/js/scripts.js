@@ -1,25 +1,12 @@
-let apartmentView = document.getElementById("view_apartments");
+$(document).ready(function(){
+    $("#view_apartments").on('change', function(ev){
 
-function apartmentViewHandler(ev){
-    if( ev.target.value = "location" ){
-        console.log(ev.target.value)
-        $("#list_content").hide();
-        $("#area_content").hide();
-        $("#location_content").show();
-    } /* else if( ev.target.value = "list" ){
-        console.log(ev.target.value)
-        $("#area_content").hide();
-        $("#location_content").hide();
-        $("#list_content").show();
-    } else if( ev.target.value = "area" ){
-        console.log(ev.target.value)
-        $("#list_content").hide();
-        $("#location_content").hide();
-        $("#area_content").show();
-    }
-    else{
-        console.log('you chose default')
-    } */
-}
-
-apartmentView.addEventListener('change', apartmentViewHandler);
+        if($(this).val() === 'list'){
+            $("#list_content").removeClass("dis-none");
+            $("#location_content").addClass("dis-none");
+        }else{
+            $("#list_content").addClass("dis-none");
+            $("#location_content").removeClass("dis-none");
+        }
+    })
+})
