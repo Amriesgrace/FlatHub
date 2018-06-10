@@ -5,177 +5,278 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>FlatHub - Homepage</title>
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-    <link rel="stylesheet" href="assets/plugins/ui-kit/css/uikit.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" 
+    integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+     crossorigin="anonymous">
+     <!-- Custom css -->
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/style.css">
 
-<!-- UIkit JS -->
+
 
 </head>
 <body>
     <!-- start header -->
     <header>
-        <div class="uk-container-large px-3">
-            <nav class="uk-navbar" uk-navbar>
-                <div class="uk-navbar-left">
-                    <a href="" class="uk-navbar-item uk-logo">
-                        <img src="assets/images/logo/flat-hub.png" alt="Logo">
-                    </a>
-                    
-                </div>
-                <div class="uk-navbar-right">
-                    <ul class="uk-navbar-nav">
-                        <li class="uk-active"><a href="">Our Apartments</a></li>
-                        <li class="uk-parent"><a href="">List Apartment</a></li>
-                        <li><a href="">SignUp</a></li>
-                        <li><a href="">LogIn</a></li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
-        
+        <nav class="navbar navbar-expand-lg bg-white">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/images/logo/flat-hub.png" alt="Logo">
+            </a>
+            <button class="navbar-toggler bg-brand" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto"> </ul>
+                <ul class="navbar-nav navbar-right">
+                    <li class="nav-item">
+                        <a class="nav-link font-color hover-link" href="our_apartments.html">Our Apartments</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link font-color hover-link" href="list_apartments.html">List Apartments</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link font-color hover-link" href="signup.html">Sign Up</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link font-color hover-link" href="login.html">Log In</a>
+                    </li>
+                </ul>
+               
+            </div>
+        </nav>
     </header>
     <!-- ./End header -->
-    <!-- start main -->
+    <!-- Start main -->
     <main>
-        <!-- banner img -->
-        <div class="uk-container-large">
+        <div class="page_wrapper">
+            <!-- Start Banner -->
             <div class="banner_img">
                 <div class="inner-content">
                     <h1 class="white-text f-58">Pay monthly for affordable apartments </h1>
                     <p class="white-text">Find great apartments in Lagos at prices you can afford </p>
-                    <div class="mt-64">
-                        <form action="">
-                            <div class="row">
-                                <div class="uk-grid-small" uk-grid>
-                                    <div class="uk-grid-auto">
-                                        <input type="text" class="uk-input uk-form-controls  f-input-large" 
+                    <form action="" class="">
+                        <div class="row mr-0 mt-64">
+                            <div class="col-lg-8">
+                                <div class="row">
+                                    <div class="col-12  col-md-12 col-lg-4">
+                                        <input type="text" class=" border-0 f-input-large" 
                                             placeholder="Location e.g Yaba, Ikeja">
                                     </div>
-                                    <div class="uk-grid-auto">
-                                        <div class="">
-                                            <div class="uk-inline">
-                                                <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: calendar"></span>
-                                                <input class="uk-input f-small" type="text" placeholder="Move in ">
-                                            </div>
-                                        </div>
+                                    <div class="col-12 col-md-12 col-lg-4">
+                                        <input class="border-0 f-small" type="text" placeholder="Move in ">
                                     </div>
-                                    <div class="uk-grid-auto">
-                                        <button class="btn btn-large">Find an apartment</button>
+                                    <div class="col-12 col-md-12 col-lg-4">
+                                            <button class="btn btn-large">Find an apartment</button>
                                     </div>
-                                    
                                 </div>
-                                
                             </div>
-                        </form>
-                    </div>
+                            <div class="col-md-4"></div>
+                        </div>
+                    </form>
                 </div>
-                
             </div>
-            <section class="mt-64 mb-6e2 bg-white">
-                <div class="uk-container-large px-3">
-                    <h3 class="f-36 center">How it works</h3>
-                    <div class="uk-child-width-1-2@s uk-child-width-1-4@m uk-text-center mt-80" uk-grid>
-                        <div class="work-card">
-                            <div class="card-header">
-                                <img src="assets/images/icons/1.svg" class="uk-align-center" alt="">
-                            </div>
-                            <div class="card-body">
-                                <h3 class="f-24 fw-500">Search for apartments</h3>
-                                <p class="f-14">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                            </div>
-                        </div>
-                        <div class="work-card">
-                            <div class="card-header">
-                                <img src="assets/images/icons/1-copy-3.svg" class="uk-align-center" alt="">
-                            </div>
-                            <div class="card-body">
-                                <h3 class="f-24 fw-500">Choose an apartment</h3>
-                                <p class="f-14">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+            <!-- ./End Banner -->
+            <!-- How it works  -->
+            <section class="mt-64 mb-5 bg-white">
+                <div class="container-fluid px-3">
+                    <h3 class="f-36 text-center">How it works</h3>
+                    <div class="row mt-64">
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                            <div class="work-card">
+                                <div class="card-header text-center bg-transparent border-0">
+                                    <img src="assets/images/icons/1.svg" class="img-fluid" alt="number one icon">
+                                </div>
+                                <div class="card-body">
+                                    <h3 class="f-24 fw-500 text-center">Search for apartments</h3>
+                                    <p class="f-14 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                                </div>
                             </div>
                         </div>
-                        <div class="work-card">
-                            <div class="card-header">
-                                <img src="assets/images/icons/1-copy-2.svg" class="uk-align-center" alt="">
-                            </div>
-                            <div class="card-body">
-                                <h3 class="f-24 fw-500">Get verified</h3>
-                                <p class="f-14">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                            <div class="work-card">
+                                <div class="card-header text-center bg-transparent border-0">
+                                    <img src="assets/images/icons/1-copy-3.svg" class="img-fluid" alt="number two icon">
+                                </div>
+                                <div class="card-body">
+                                    <h3 class="f-24 fw-500 text-center">Choose an apartment</h3>
+                                    <p class="f-14 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                                </div>
                             </div>
                         </div>
-                        <div class="work-card">
-                            <div class="card-header">
-                                <img src="assets/images/icons/1-copy.svg" class="uk-align-center" alt="">
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                            <div class="work-card">
+                                <div class="card-header text-center bg-transparent border-0">
+                                    <img src="assets/images/icons/1-copy-2.svg" class="img-fluid" alt="number three icon">
+                                </div>
+                                <div class="card-body">
+                                    <h3 class="f-24 fw-500  text-center">Get verified</h3>
+                                    <p class="f-14 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                                </div>
                             </div>
-                            <div class="card-body">
-                                <h3 class="f-24 fw-500">Move in</h3>
-                                <p class="f-14">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                            <div class="work-card">
+                                <div class="card-header text-center bg-transparent border-0">
+                                    <img src="assets/images/icons/1-copy.svg" class="img-fluid" alt="number four icon">
+                                </div>
+                                <div class="card-body">
+                                    <h3 class="f-24 fw-500 text-center">Move in</h3>
+                                    <p class="f-14 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                
             </section>
 
-            <section class="py-4e4 bg-secondary">
-                <div class="uk-container-large px-3">
-                    <h3 class="f-36 center">Our Features</h3>
-                    <div class="uk-child-width-1-2@s uk-child-width-1-4@m uk-text-center mt-80" uk-grid>
-                        <div class="features-card">
-                            <div class="card-header">
-                                <img src="assets/images/icons/naira.png" class="uk-align-center" alt="naira icon">
-                            </div>
-                            <div class="card-body">
-                                <h3 class="f-24 fw-500">Affordable apartments</h3>
-                                <hr class="small-hr" />
-                                <p class="f-14">Great homes at prices you can afford </p>
-                            </div>
-                        </div>
-                        <div class="features-card">
-                            <div class="card-header">
-                                <img src="assets/images/icons/wallet.png" class="uk-align-center" 
-                                    alt="wallet icon">
-                            </div>
-                            <div class="card-body">
-                                <h3 class="f-24 fw-500">Pay Monthly</h3>
-                                <hr class="small-hr" />
-                                <p class="f-14">Pay rent monthly starting from as low ₦60k</p>
+            <!-- Features section -->
+            <section class="py-4 bg-grey">
+                <div class="container-fluid">
+                    <h3 class="f-36 text-center mt-80">Our Features</h3>
+                    <div class="row mt-80">
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                            <div class="features-card">
+                                <div class="card-header bg-transparent border-0 text-center">
+                                    <img src="assets/images/icons/naira.png" class="img-fluid" alt="naira icon">
+                                </div>
+                                <div class="card-body">
+                                    <h3 class="f-24 fw-500 text-center">Affordable apartments</h3>
+                                    <hr class="small-hr" />
+                                    <p class="f-14  mt-4 text-center">Great homes at prices you can afford </p>
+                                </div>
                             </div>
                         </div>
-                        <div class="features-card">
-                            <div class="card-header">
-                                <img src="assets/images/icons/listed-apartments.png" class="uk-align-center" alt="">
-                            </div>
-                            <div class="card-body">
-                                <h3 class="f-24 fw-500">Verified spaces</h3>
-                                <hr class="small-hr" />
-                                <p class="f-14">Stable power in all our homes</p>
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                            <div class="features-card">
+                                <div class="card-header  bg-transparent border-0 text-center">
+                                    <img src="assets/images/icons/wallet.png" class="img-fluid" 
+                                        alt="wallet icon">
+                                </div>
+                                <div class="card-body">
+                                    <h3 class="f-24 fw-500 text-center">Pay Monthly</h3>
+                                    <hr class="small-hr" />
+                                    <p class="f-14  mt-4 text-center">Pay rent monthly starting from as low ₦60k</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="features-card">
-                            <div class="card-header">
-                                <img src="assets/images/icons/5-point-star.svg" class="uk-align-center" alt="">
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                            <div class="features-card">
+                                <div class="card-header bg-transparent border-0 text-center">
+                                    <img src="assets/images/icons/listed-apartments.png" 
+                                        class="img-fluid" alt="listed apartmets icon">
+                                </div>
+                                <div class="card-body">
+                                    <h3 class="f-24 fw-500 text-center">Verified spaces</h3>
+                                    <hr class="small-hr" />
+                                    <p class="f-14 mt-4 text-center">Stable power in all our homes</p>
+                                </div>
                             </div>
-                            <div class="card-body">
-                                <h3 class="f-24 fw-500">Prime locations</h3>
-                                <hr class="small-hr" />
-                                <p class="f-14">All our homes are equipped with internet access  </p>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                            <div class="features-card">
+                                <div class="card-header bg-transparent border-0 text-center">
+                                    <img src="assets/images/icons/5-point-star.svg" class="img-fluid" alt="five star icon">
+                                </div>
+                                <div class="card-body">
+                                    <h3 class="f-24 fw-500 text-center">Prime locations</h3>
+                                    <hr class="small-hr" />
+                                    <p class="f-14 mt-4 text-center">All our homes are equipped with internet access  </p>
+                                </div>
                             </div>
+                        </div>   
+                    </div>
+                </div>
+            </section>
+
+            <!-- Location -->
+            <section class="py-4 mt-80">
+                <h3 class="text-center f-36">Our Locations</h3>
+                <div class="container">
+                    <div class="row mt-5">
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <figure>
+                                <img src="assets/images/rectangle-9.png" class="w-100" alt="yaba">
+                                <figcaption class="text-center">Yaba</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <figure>
+                                <img src="assets/images/rectangle-9.png" class="w-100" alt="Surulere">
+                                <figcaption class="text-center">Surulere</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <figure>
+                                <img src="assets/images/rectangle-9.png" class="w-100" alt="Ikeja">
+                                <figcaption class="text-center">Ikeja</figcaption>
+                            </figure>
                         </div>
                     </div>
                 </div>
-                
             </section>
         </div>
-        <!-- ./banner img -->
     </main>
-    <!-- ./ end main -->
+    <!-- ./ End Main -->
+    <!-- Start footer -->
+    <footer class="bg-dark-brand mt-80">
+        <div class="container">
+            <div class="row footer-level-one">
+                <div class="col-md-12 col-lg-6">
+                    <div class="mt-64">
+                        <p class="f-24 white-text">Get exclusive updates about our new apartments</p>
+                        <input type="text" class="f-input-large border-0">
+                        <button class="btn btn-large">Subscribe</button>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-6">
+                    <div class="row mt-64">
+                        <div class="col-md-3">
+                            <ul>
+                                <li class= "list-none f-14 mb-4"><a href="" class="white-text no-decor hover-link">About Us</a></li>
+                                <li class="list-none f-14 mb-4"><a href="" class="white-text no-decor hover-link">Contact Us</a></li>
+                                <li class="list-none f-14 mb-4"><a href="" class="white-text no-decor hover-link">FAQ's</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <ul>
+                                <li class="list-none f-14 mb-4"><a href="" class="white-text no-decor hover-link">Payment Structure</a></li>
+                                <li class="list-none f-14 mb-4"><a href="" class="white-text no-decor hover-link">Terms of Use</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="white-text">Follow us on 
+                                <span>
+                                    <i class="fa fa-facebook"></i>
+                                    <i class="fa fa-twitter"></i>
+                                    <i class="fa fa-instagram"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row footer-level-two">
+                <div class="col-md-12 text-center mt-7e2">
+                    <p class="grey-sd f-16 text-center">&copy; &nbsp; &nbsp; FlatHub.ng</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ./EndFooter -->
 
 
-
-        <script src="assets/plugins/ui-kit/js/uikit.min.js"></script>
-        <script src="assets/plugins/ui-kit/js/uikit-icons.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" 
+    integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" 
+    crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" 
+    integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" 
+    crossorigin="anonymous"></script>
     
 </body>
 </html>

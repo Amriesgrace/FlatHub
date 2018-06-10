@@ -1,4 +1,48 @@
 
-.btn{
+input:focus{
+    color: $font-color;
+    border-color: $brown-color;
+    outline: 0;
+    box-shadow: 0 0 7px 0.2rem rgba(166, 100, 41, 1);
+}
+.facebook-btn{
+    width: 300px;
+    height: 44px;
+    color: $white-color;
+    margin-top: 1.5rem;
 
+    @include screenSize(tablet){
+        margin: auto 1rem;
+        width: 300px;
+        margin-top:1.5rem;
+    }
+    @include screenSize(ls-phone){
+        width:270px;
+    }
+    @include screenSize(ss-phone){
+        width:270px;
+        margin: auto 1em;
+    }
+    
+}
+.login-input{
+    width:300px;
+    height: 44px;
+    border-radius: 3px;
+    padding: 0 1em;
+    @include screenSize(ss-phone){
+        width: 270px;
+
+    }
+}
+.login-btn{
+    width: 300px;
+    height: 44px;
+    color: $white-color;
+    margin-top: 1.5rem;
+
+    @include screenSize(ss-phone){
+        width:270px;
+
+    }
 }

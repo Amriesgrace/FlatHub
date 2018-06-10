@@ -1,24 +1,6 @@
-// @font-face{
-//     font-family: 'WorkSans';
-//     src: url('../fonts/Work_Sans/WorkSans-Black.ttf'); 
-//     font-weight: normal;
-// }
-// @font-face{
-//     font-family: 'WorkSans-Bold';
-//     src: url('../fonts/Work_Sans/WorkSans-Bold.ttf');
-//     font-weight: normal;
-// }
-// @font-face{
-//     font-family: 'WorkSans-Medium';
-//     src: url('../fonts/Work_Sans/WorkSans-Medium.ttf');
-//     font-weight: normal;
-// }
-// @font-face{
-//     font-family: 'WorkSans-Regular';
-//     src: url('../fonts/Work_Sans/WorkSans-Regular.ttf');
-//     font-weight: normal;
-// }
+
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:400,500,700,900');
+
 
 *{
     margin: 0;
@@ -34,18 +16,31 @@ html, body{
 }
 body{
     font-family: 'Work Sans', sans-serif !important;
+    
 }
 /*Margin*/
 //Margin-top
 .mt-64{ margin-top:64px; }
 .mt-80{ margin-top:80px; }
+.mt-7e2{ margin-top: 7.2rem; }
+
 //Margin Botom
 .mb-6e2{ margin-bottom: 6.2rem; }
+
 .mx-3{
     margin-left: 3rem;
     margin-right:3rem;
 }
 /*Padding*/
+.py-165{  
+    padding-top: 165px;
+    padding-bottom: 165px;
+    @include screenSize(ss-phone){ 
+        padding-top: 65px;
+        padding-bottom: 65px;
+    }
+}
+
 .py-4e4{ 
     padding-top: 4.4rem; 
      padding-bottom: 4.4rem
@@ -56,9 +51,10 @@ body{
 }
 
 /**Font-Size**/
+.f-12{ font-size: 12px; }
 .f-14{ font-size: $font-14; }
 .f-16{ font-size: $font-16; }
-.f-24{ font-size: $font-24; }
+.f-24{ font-size: $font-24; @include screenSize(small-desktop){ font-size: 18px;}}
 .f-36{ font-size: $font-36; }
 .f-40{ font-size: $font-40; }
 .f-58{ font-size: $font-58; }
@@ -67,17 +63,32 @@ body{
 /*** Font weight***/
 .fw-500{ font-weight: 500;}
 
+/***Width***/
+.width-80p{ width:80%; }
+.width-195{ width: 195px; }
+.width-300{ width:300px; }
+.width-364{ width: 364px; }
 
 /**Heights**/
 .h-44{ height:44px }
-
+.h-400{ height:400px; }
 
 /**Backgrounds**/
 .bg-white{ background:$white-color }
-.bg-secondary{ background: #F9F9F9; }
+.bg-grey{ background: #F9F9F9; }
+.bg-dark-brand{ background: $font-color; }
+.bg-brand{ background: $brown-color; }
+.bg-dark-grey{ background: #D8D8D8;}
+.bg-blue{ background: #334ea8; }
 
 /**Colors**/
 .white-text{ color: $white-color;}
+.grey-sd{ color: #D1C8C8;}
+.font-color{ color: $font-color; }
+.brand-color{ color: $brown-color; }
+.grey-bd{ border: 1px solid #CDCDCD;}
+.bd-brand{ border: 1px solid $brown-color; }
+.br-2{ border-radius: 2px;}
 
 
 /***Positions***/
@@ -89,13 +100,34 @@ body{
 .inner-content{
     padding-top: 227px;
     padding-left:100px;
-    h3{
+    h1{
         font-weight: 500;
+        @include screenSize(ss-phone){font-size: $font-40}
     }
     p{
         line-height: 24px;
         font-size: 20px;
     }
+    @include screenSize(ss-phone){
+        padding: 1em;
+        padding-top: 150px;
+    }
+    @include screenSize(ls-phone){
+        padding: 1em;
+        padding-top: 150px;
+
+    }
+    @include screenSize(tablet){
+        padding-top: 150px;
+    }
+    @include screenSize(small-desktop){ padding-top: 170px;}
+}
+
+input{
+    @include screenSize(ss-phone){ margin-bottom: 1em; }
+    @include screenSize(ls-phone){margin-bottom: 1em; }
+    @include screenSize(tablet){ margin-bottom: 1em; }
+    @include screenSize(small-desktop){ margin-bottom: 1em;}
 }
 
 /**inputs and buttons **/
@@ -106,7 +138,14 @@ body{
     background: $white-color;
     padding: 12px 22px;
     font-size: $font-16;
+    @include screenSize(small-desktop) {
+        width: 200px;
+    }  
+    @include screenSize(tablet){
+        margin-bottom: 1em;
+    }
 }
+
 .f-small{
     width: 165px;
     height: 44px;
@@ -114,6 +153,7 @@ body{
     background: $white-color;
     padding: 12px 22px;
     border: none !important;
+    
 }
 .btn-large{
     width:232px;
@@ -123,7 +163,10 @@ body{
     color: $white-color;
     border: none;
     font-weight: bold;
+
 }
+
+
 .small-hr{
  border: 1px solid $brown-color;
  width: 97px;
@@ -134,3 +177,71 @@ body{
  background: $brown-color;
 
 }
+.list-none{ list-style-type: none;}
+.dis-none{ display: none; }
+.dis-block{ display: block; }
+.no-decor{ text-decoration: none; }
+.no-decor:hover{ text-decoration: none; }
+.hover-link:hover{ color: $brown-color; }
+.active{ color: $brown-color; }
+
+.hover-link:active{ color: $brown-color; }
+
+.divider {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-weight: 300;
+    margin-top: 30px;
+    margin-bottom: 35px; 
+}
+.divider p {
+    margin-top: 5px; 
+}
+.divider:before {
+    content: '';
+    height: 1.5px;
+    background: #E1E0E0;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    margin: 0 .45em 0 0; 
+}
+.divider:after {
+    content: '';
+    height: 1.5px;
+    background: #E1E0E0;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    margin: 0 0 0 .45em; 
+}
+.form-container{
+    width: 364px;
+    margin: auto;
+    border-radius: 3px;
+    background: #fff;
+    @include screenSize(small-desktop){padding: 1rem;}
+    label{
+        @include screenSize(small-desktop){font-size: 16px;}
+    }
+    @include screenSize(tablet){
+        
+        padding: 1rem 1rem;
+    }
+    @include screenSize(ls-phone){padding: 1rem;}
+    @include screenSize(ss-phone){
+        width: 100%;
+        padding:  1rem;
+    }
+}
+  
